@@ -478,6 +478,7 @@ body {
 .contact {
   position: relative;
   background-color: #eee;
+  overflow: hidden;
 }
 .contact .white-block-left {
   background-color: #2e2e2e;

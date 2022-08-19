@@ -404,6 +404,7 @@ body{
 .contact{
     position: relative;
     background-color: $light-white;
+    overflow: hidden;
     .white-block-left{
         background-color: $dark;
     }
