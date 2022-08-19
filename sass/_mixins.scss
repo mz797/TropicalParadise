@@ -17,3 +17,11 @@
     left: 50%;
     transform: translateX(-50%);
 }
+@mixin inputsStyle{
+    margin-bottom: 2em;
+    padding: 0.6em 1.2em;
+    border-radius: 8px;
+    border: 1px solid transparent;  
+    font-size: 1.6rem;                
+    box-shadow: 0 0 5px #2e2e2e17;
+}

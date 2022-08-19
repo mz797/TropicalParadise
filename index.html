@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tropical Paradise</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:wght@300;700&display=swap"
         rel="stylesheet">
@@ -16,7 +17,7 @@
 <body>
 
     <nav class="nav">
-        <button class="burger-btn">
+        <button class="burger-btn ">
             <div class="burger-btn__box">
                 <div class="burger-btn__bars"></div>
             </div>
@@ -29,7 +30,7 @@
         </div>
     </nav>
 
-    <header class="header section">
+    <header class="header section ">
         <h1 class="header__heading">Tropical Paradise</h1>
         <p class="header__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
         <a href="#offers" class="header__btn btn-special-animation">Poznaj ofertę</a>
@@ -137,13 +138,153 @@
                 </div>
 
             </div>
-
         </section>
+        <section class="offers section-padding section" id="offers">
+            <div class="white-block white-block-right"></div>
+            <div class="white-block white-block-left"></div>
 
+            <h2 class="section-heading">Oferty</h2>
+            <div class="wrapper">
+                <div class="offers__box">
+                    <div class="offers__option">
+                        <img src="./img/offer1.jpg" alt="Impreza z dziećmi nad wodą." class="offers__option-img">
+                        <div class="offers__option-info">
+                            <h3 class="offers__option-heading">Wyjazd z dziećmi</h3>
+                            <p class="offers__option-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Possimus a aperiam omnis mollitia rem assumenda minima eligendi, ut totam cum!</p>
+                            <p class="offers__option-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                            <button class="offers__option-btn btn-special-animation">Wybierz</button>
 
+                        </div>
+                    </div>
+                    <div class="offers__option">
+                        <img src="./img/offer2.jpg" alt="Ludzie nad ogniskiem.."
+                            class="offers__option-img offers__option-img--right">
+                        <div class="offers__option-info">
+                            <h3 class="offers__option-heading">Wypad z kumplami</h3>
+                            <p class="offers__option-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Possimus a aperiam omnis mollitia rem assumenda minima eligendi, ut totam cum!</p>
+                            <p class="offers__option-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                            <button class="offers__option-btn btn-special-animation">Wybierz</button>
+
+                        </div>
+                    </div>
+                    <div class="offers__option">
+                        <img src="./img/offer4.jpg" alt="Stolik dla dwojga." class="offers__option-img">
+                        <div class="offers__option-info">
+                            <h3 class="offers__option-heading">Tylko we dwoje</h3>
+                            <p class="offers__option-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Possimus a aperiam omnis mollitia rem assumenda minima eligendi, ut totam cum!</p>
+                            <p class="offers__option-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                            <button class="offers__option-btn btn-special-animation">Wybierz</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews section-padding section white-section" id="reviews">
+            <h2 class="section-heading">Opinie</h2>
+            <div class="wrapper">
+                <div class="reviews__boxes">
+                    <div class="reviews__box">
+                        <div class="reviews__box-img">
+                            <img src="./img/opinion1.jpg" alt="Anna Nowak">
+                        </div>
+                        <div class="reviews__box-info">
+                            <div class="reviews__box-quote"> <i class="fas fa-quote-right"></i></div>
+                            <p class="reviews__box-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Reprehenderit amet ex, animi culpa provident beatae quos possimus libero velit ea.</p>
+                            <strong>Anna Nowak</strong>
+                        </div>
+                    </div>
+                    <div class="reviews__box">
+                        <div class="reviews__box-img">
+                            <img src="./img/opinion2.jpg" alt="Kamil Glik">
+                        </div>
+                        <div class="reviews__box-info">
+                            <div class="reviews__box-quote"> <i class="fas fa-quote-right"></i></div>
+                            <p class="reviews__box-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Reprehenderit amet ex, animi culpa provident beatae quos possimus libero velit ea.</p>
+                            <strong>Kamil Glik</strong>
+                        </div>
+                    </div>
+                    <div class="reviews__box">
+                        <div class="reviews__box-img">
+                            <img src="./img/opinion3.jpg" alt="Lucjana Ferrucci">
+                        </div>
+                        <div class="reviews__box-info">
+                            <div class="reviews__box-quote"> <i class="fas fa-quote-right"></i></div>
+                            <p class="reviews__box-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Reprehenderit amet ex, animi culpa provident beatae quos possimus libero velit ea.</p>
+                            <strong>Lucjana Ferrucci</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact section-padding section white-section" id="contact">
+            <div class="white-block white-block-right"></div>
+            <div class="white-block white-block-left"></div>
+            <h2 class="section-heading">Kontakt</h2>
+            <div class="wrapper">
+                <form class="contact__form">
+                    <div class="contact__form-top">
+                        <label for="name" class="contact__form-label">Imię i nazwisko:</label>
+                        <input type="text" class="contact__form-input" id="name">
+
+                        <label for="email" class="contact__form-label">E-mail:</label>
+                        <input type="text" class="contact__form-input" id="email">
+                    </div>
+                    <label for="msg" class="contact__form-label">Wiadomość:</label>
+                    <textarea id="msg" class="contact__form-textarea"></textarea>
+
+                    <button type="submit" class="contact__form-btn btn-special-animation">Wyślij</button>
+                </form>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="wrapper">
+                <div class="footer__boxes">
+                    <div class="footer__box">
+                        <h3 class="footer__box-title"><i class="fas fa-kiwi-bird"></i> TP Co.</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae veritatis repudiandae hic
+                            ipsam dolore, sequi laudantium quo dignissimos quod quibusdam?</p>
+                        <div class="footer__box-social">
+                            <a href="#" class="footer__box-link"><i class="fab fa-twitter-square"></i></a>
+                            <a href="#" class="footer__box-link"><i class="fab fa-facebook-square"></i></a>
+                            <a href="#" class="footer__box-link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer__box footer__box-desktop">
+                        <h3 class="footer__box-title">Wyspy</h3>
+                        <ul class="footer__box-list">
+                            <li class="footer__box-list-item"><a href="#">Wyspa Tiki Taki</a></li>
+                            <li class="footer__box-list-item"><a href="#">Wyspa Toca Toca</a></li>
+                            <li class="footer__box-list-item"><a href="#">Wyspa Nobu</a></li>
+                            <li class="footer__box-list-item"><a href="#">Pozostałe wyspy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__box footer__box-desktop">
+                        <h3 class="footer__box-title">o Firmie</h3>
+                        <ul class="footer__box-list">
+                            <li class="footer__box-list-item"><a href="#">O nas</a></li>
+                            <li class="footer__box-list-item"><a href="#">Zarząd</a></li>
+                            <li class="footer__box-list-item"><a href="#">Kariera</a></li>
+                            <li class="footer__box-list-item"><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="footer__bottom-text">&copy <span class="footer__year"> </span> Tropical Paradise</p>
+        </footer>
     </main>
 
-
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/slick.js"></script>
     <script src="./js/main.js"></script>
 </body>
 
